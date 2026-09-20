@@ -95,11 +95,8 @@ block evaluation.
 ## Timing repeated calculations
 
 In a local benchmark, batch evaluation with hot caches and four worker
-threads achieved approximately **33,623 points per second**, computing all
-five components at each point. For the 2,000-point example, the median of
-five timed runs was approximately **0.0595 seconds**, after one complete
-warm-up call. This is a measured result for the tested machine and model;
-performance varies with hardware and calculation parameters.
+threads achieved approximately 33,623 points per second, computing all
+five components at each point. 
 
 The example clears the curve caches and evaluates the complete curve once
 to warm up the solver. It then repeats the same calculation five times
